@@ -20,11 +20,30 @@ app.get('/', (req, res) => {
     message: '🦄🌈✨👋🌎🌍🌏✨🌈🦄',
   });
 });
-app.get('/GET-PRODUCT',(req, res) => {
+app.get('/GET-PRODUCT', (req, res) => {
   res.json({
-    TEST:"MY TEST"
+    TEST: 'MY TEST',
   });
-})
+});
+app.get('/SUM', (req, res) => {
+  const { a, b } = req.query;
+
+  if (!a || !b) {
+    return res.status(400).json({ error: 'Please provide both a and b query parameters' });
+  }
+
+  const sum1 = parseFloat(a) + parseFloat(b);
+
+  if (isNaN(sum1)) {
+    return res.status(400).json({ error: 'Both a and b must be valid numbers' });
+  }
+
+  res.json({
+    a: parseFloat(a),
+    b: parseFloat(b),
+    sum: sum1,
+  });
+});
 app.use('/api/v1', api);
 
 app.use(middlewares.notFound);
