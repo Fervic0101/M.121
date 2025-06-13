@@ -16,8 +16,9 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
+  console.log(req.query)
   res.json({
-    message: '🦄🌈✨👋🌎🌍🌏✨🌈🦄',
+    message: "rmp"
   });
 });
 

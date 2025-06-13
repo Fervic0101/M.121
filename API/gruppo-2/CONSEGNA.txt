@@ -1,0 +1,12 @@
+Gruppo 2:
+    Modifica Sito :
+        Aggingere Menu :
+            Chi siamo , Dove siamo , Prodotti , preventivi , Login
+        Aggiunta Pagina
+            Chi Siamo , dove siamo , Preventivi
+    Creazione API :
+        Aggiungere API Salva-Preventivi per il salvataggio del preventivo
+            -Nome
+            -cognome
+            -richiesta di preventivo
+            -DataInserimento
