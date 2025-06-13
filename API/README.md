@@ -3,7 +3,8 @@
 How to use this template:
 
 ```sh
-npx create-express-api --directory my-api-name
+npx create-express-api --directory my-api-name 
+anna
 ```
 
 Includes API Server utilities:
