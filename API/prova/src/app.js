@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
     message: '🦄🌈✨👋🌎🌍🌏✨🌈🦄',
   });
 });
-app.get('/GET-PRODUCT',(req, res) => {
+app.get('/GET',(req, res) => {
   res.json({
     TEST:"MY TEST"
   });
